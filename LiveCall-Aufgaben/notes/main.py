@@ -23,7 +23,6 @@ def update_note(oldTitle, newTitle, newText):
             break
     notes[index] = {"title": newTitle, "text": newText}
 
-# delete_note()
 add_note("Hausarbeit", "Fußboden wischen")
 show_notes()
 delete_note("Hausarbeit")
