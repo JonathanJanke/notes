@@ -25,9 +25,9 @@ def update_note(oldTitle, newTitle, newText):
 
 add_note("Hausarbeit", "Fußboden wischen")
 show_notes()
+print("----")
 delete_note("Hausarbeit")
-print("----")
 show_notes()
-update_note("Arbeit", "Arbeit2", "Backendcall um 13 Uhr")
 print("----")
+update_note("Arbeit", "Arbeit2", "Backendcall um 13 Uhr")
 show_notes()
