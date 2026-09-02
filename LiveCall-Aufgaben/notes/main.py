@@ -16,13 +16,11 @@ def delete_note(title):
     for note in notes:
         if note["title"] == title:
             notes.remove(note)
-            break
     
 def update_note(oldTitle, newTitle, newText):
     for note in notes:
         if note["title"] == oldTitle:
             index = notes.index(note)
-            break
     notes[index] = {"title": newTitle, "text": newText}
 
 add_note("Hausarbeit", "Fußboden wischen")
