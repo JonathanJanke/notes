@@ -16,12 +16,16 @@ def delete_note(title):
     for note in notes:
         if note["title"] == title:
             notes.remove(note)
-    
+            return
+    print("Note not found")
+
 def update_note(oldTitle, newTitle, newText):
     for note in notes:
         if note["title"] == oldTitle:
             index = notes.index(note)
-    notes[index] = {"title": newTitle, "text": newText}
+            notes[index] = {"title": newTitle, "text": newText}
+            return
+    print("Note not found")
 
 add_note("Hausarbeit", "Fußboden wischen")
 show_notes()
